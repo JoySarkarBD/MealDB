@@ -1,3 +1,10 @@
+const textbox = document.getElementById("search-input");
+textbox.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "Enter") {
+        searchFood()
+    }
+});
+
 const searchFood = () => {
     const searchInput = document.getElementById('search-input');
     const searchText = searchInput.value;
